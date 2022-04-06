@@ -16,6 +16,7 @@ namespace StoreLaptopApp.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+
         // GET: Orders
         public ActionResult Index()
         {
