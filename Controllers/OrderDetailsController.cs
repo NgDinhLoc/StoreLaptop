@@ -24,7 +24,7 @@ namespace StoreLaptopApp.Controllers
             List<OrderDetail> orderDetail = db.OrderDetails.Where(o => o.OrderId == id).Include(o => o.Product).ToList();
             if (orderDetail == null)
             {
-                return HttpNotFound();
+                return HttpNotFound(); 
             }
             return View(orderDetail);
         }
