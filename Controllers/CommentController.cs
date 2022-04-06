@@ -14,6 +14,7 @@ namespace StoreLaptopApp.Controllers
         public ActionResult Create(int masp, String Content, string IdAccount, string NameAccount)
         {
             CommentBus.ThemComment(masp, Content, User.Identity.GetUserId(), User.Identity.Name);
+
             return RedirectToAction("Details", "Product", new { Id = masp });
         }
         public ActionResult Index(int masp)
