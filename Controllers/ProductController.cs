@@ -31,14 +31,13 @@ namespace StoreLaptopApp.Controllers
             return View();
         }
 
+
         // POST: Product/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
             try
             {
-                // TODO: Add insert logic here
-
                 return RedirectToAction("Index");
             }
             catch
