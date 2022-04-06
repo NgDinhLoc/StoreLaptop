@@ -14,6 +14,7 @@ namespace StoreLaptopApp.Controllers
         public ActionResult Index(string key)
         {
             var db = ShopLaptopBus.Search(key);
+
             return View(db);
         }
     }
