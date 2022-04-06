@@ -24,6 +24,7 @@ namespace StoreLaptopApp.Controllers
             return View(db);
         }
 
+
         // GET: Product/Create
         public ActionResult Create()
         {
