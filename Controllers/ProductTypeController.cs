@@ -15,6 +15,7 @@ namespace StoreLaptopApp.Controllers
         {
             var ds = ProductTypeBus.ChiTiet(id).ToPagedList(page, pagesize);
             return View(ds);
+
         }
     }
 }
