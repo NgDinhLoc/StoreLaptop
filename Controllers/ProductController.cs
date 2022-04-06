@@ -81,10 +81,12 @@ namespace StoreLaptopApp.Controllers
             try
             {
                 return RedirectToAction("Index");
+
             }
             catch
             {
                 return View();
+
             }
         }
     }
